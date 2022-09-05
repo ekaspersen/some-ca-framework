@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="./img/svg/soMe-Logo.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Vite App</title>
+        <!-- JS -->
+        <script defer src="./js/dropdown.js"></script>
+    </head>
+    <body>
+        <main>
+            <div class="main-inner">
+                <div class="return-home">
+                    <a href="./">
+                        <img src="./img/svg/soMe-Logo.svg" alt="logo" />
+                    </a>
+                </div>
+                <h1 class="landing padding-inner">Good morning, Hesh</h1>
+                <hr />
+                <section class="padding-inner">
+                    <div class="post">
+                        <div class="post-header">
+                            <div
+                                class="profile-pic-post"
+                                style="
+                                    background-image: url(./img/profile-pic.jpg);
+                                "
+                            ></div>
+                            <p class="username">Birk Magnusson</p>
+
+                            <div class="dropdown">
+                                <button
+                                    class="dropbtn post-header-dropdown"
+                                    onclick="myFunction()"
+                                >
+                                    ●●●
+                                </button>
+                                <div class="dropdown-content" id="myDropdown">
+                                    <a href="#">Share</a>
+                                    <a href="#">Save</a>
+                                    <a href="#">Report</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <img
+                                class="post-img"
+                                src="./img/profile-pic.jpg"
+                                alt="image"
+                            />
+
+                            <hr />
+                            <p class="post-content-text">
+                                I had such a great day and also got this
+                                smashing new profile picture toooo good not to
+                                share in the SoMe feed!!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <div class="post-header">
+                            <div
+                                class="profile-pic-post"
+                                style="
+                                    background-image: url(./img/pfp.jpg);
+                                    background-position: center top;
+                                    background-size: 250%;
+                                "
+                            ></div>
+                            <p class="username">Ugla Brendemo</p>
+
+                            <div class="dropdown">
+                                <button
+                                    class="dropbtn post-header-dropdown"
+                                    onclick="myFunction()"
+                                >
+                                    ●●●
+                                </button>
+                                <div class="dropdown-content" id="myDropdown">
+                                    <a href="#">Share</a>
+                                    <a href="#">Save</a>
+                                    <a href="#">Report</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <img
+                                class="post-img"
+                                src="./img/pic-in-feed.jpg"
+                                alt="image"
+                            />
+
+                            <hr />
+                            <p class="post-content-text">
+                                JARRAAA GUTTÆÆÆÆÆÆÆ knall kveld, hehe!
+                                #BrendemoLIFESTYYYLE
+                            </p>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <div class="post-header">
+                            <div
+                                class="profile-pic-post"
+                                style="
+                                    background-image: url(./img/hearthands.jpg);
+                                    background-position: center -20px;
+                                "
+                            ></div>
+                            <p class="username">Rita Johansson</p>
+
+                            <div class="dropdown">
+                                <button
+                                    class="dropbtn post-header-dropdown"
+                                    onclick="myFunction()"
+                                >
+                                    ●●●
+                                </button>
+                                <div class="dropdown-content" id="myDropdown">
+                                    <a href="#">Share</a>
+                                    <a href="#">Save</a>
+                                    <a href="#">Report</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <img
+                                class="post-img"
+                                src="./img/girl-w-stripes.jpg"
+                                alt="image"
+                            />
+
+                            <hr />
+                            <p class="post-content-text">
+                                OMG yaaaaaaAAAAASSSS @Fabiano Did me up sooo
+                                good with theese photos, like... I JUST
+                                LOV'EEEMMMM!! ##XOXO
+                            </p>
+                        </div>
+                        <hr />
+                    </div>
+                    <div class="load-more-posts">
+                        <a href="#loadMore" id="loadMore">Load more</a>
+                    </div>
+                </section>
+                <div class="floating-nav" style="padding: 20px">
+                    <a href="#newPostForm"
+                        ><div class="floating-new-post">
+                            <p class="pluss">+</p>
+                        </div></a
+                    >
+                    <a href="./pages/profile-page.html"
+                        ><div class="floating-user">
+                            <img
+                                class="user-icon"
+                                src="./img/svg/user.svg"
+                                alt="user-icon"
+                            /></div
+                    ></a>
+                </div>
+            </div>
+        </main>
+        <form action="" id="newPostForm" class="new-post">
+            <h2 class="new-post-title">New post:</h2>
+            <hr />
+            <label for="upload-photo">Add image</label>
+            <input type="file" name="photo" id="upload-photo" />
+
+            <textarea
+                placeholder="What's on your mind?"
+                name="newPost"
+                id="newPost"
+                cols="30"
+                rows="10"
+            ></textarea>
+            <div class="submit-new-post">
+                <a href="#posted">submit</a>
+            </div>
+        </form>
+        <script type="module" src="/main.js"></script>
+    </body>
+</html>

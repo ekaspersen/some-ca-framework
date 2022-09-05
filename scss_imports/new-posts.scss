@@ -1,0 +1,47 @@
+.blackout {
+    width: 100vw;
+    height: 100vw;
+}
+.new-post {
+    //FORM class
+    padding: $padding-inner-value;
+    margin: 0 auto;
+    max-width: 500px;
+    background-color: $clr-primary-dark;
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    .new-post-title {
+        margin-top: auto;
+    }
+    hr {
+        margin-bottom: $padding-inner-value;
+    }
+    textarea {
+        margin-top: $padding-inner-value;
+        width: 100%;
+        border: 0;
+        padding: calc($padding-inner-value * 0.5);
+    }
+
+    &:target {
+        display: flex;
+        flex-direction: column;
+    }
+}
+label {
+    cursor: pointer;
+}
+.submit-new-post {
+    margin: $padding-inner-value 0;
+    width: fit-content;
+    height: fit-content;
+    a {
+        background-color: none;
+        border: $clr-secondary 1.8px solid;
+        font-size: 16px;
+        padding: 10px;
+    }
+}

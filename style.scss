@@ -1,0 +1,27 @@
+// @@ IMPORTS @@
+@import "./scss_imports/variables.scss";
+@import "./scss_imports/inner.scss";
+@import "./scss_imports/text.scss";
+@import "./scss_imports/posts.scss";
+@import "./scss_imports/new-posts.scss";
+@import "./scss_imports/pfp.scss";
+// @@ IMPORTS @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: $clr-secondary;
+}
+hr {
+    border: $clr-secondary solid thin;
+}
+body {
+    background-color: $clr-primary-dark;
+    color: $clr-secondary;
+}

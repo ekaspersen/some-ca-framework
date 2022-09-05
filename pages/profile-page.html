@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Vite App</title>
+        <!-- JS -->
+        <script defer src="../js/dropdown.js"></script>
+    </head>
+    <body>
+        <main>
+            <div class="main-inner pfp">
+                <div class="return-home">
+                    <a href="../">
+                        <img src="../img/svg/soMe-Logo.svg" alt="logo" />
+                    </a>
+                </div>
+                <div class="pfp-header">
+                    <div class="pfpic-wrapper">
+                        <img src="../img/pfp.jpg" alt="" class="pfpic" />
+                    </div>
+                    <h1 class="proile-name">Hesham</h1>
+                    <p class="profile-title">Teacher at Noroff</p>
+                    <p class="description-title">About me:</p>
+                    <p class="description">
+                        Sometimes i teach, sometimes i code. Love Live Laugh and
+                        !RECYCLE! Ready to Mingle and Single!
+                    </p>
+                </div>
+                <hr />
+                <section class="padding-inner posts-pfp">
+                    <div class="post-pfp">
+                        <img
+                            class="post-img"
+                            src="../img/profile-pic.jpg"
+                            alt="image"
+                        />
+                    </div>
+                    <div class="post-pfp">
+                        <img
+                            class="post-img"
+                            src="../img/girl-w-stripes.jpg"
+                            alt="image"
+                        />
+                    </div>
+                    <div class="post-pfp">
+                        <img
+                            class="post-img"
+                            src="../img/hearthands.jpg"
+                            alt="image"
+                        />
+                    </div>
+                    <div class="post-pfp">
+                        <img
+                            class="post-img"
+                            src="../img/hearthands.jpg"
+                            alt="image"
+                        />
+                    </div>
+                    <div class="post-pfp">
+                        <img
+                            class="post-img"
+                            src="../img/profile-pic.jpg"
+                            alt="image"
+                        />
+                    </div>
+                    <div class="post-pfp">
+                        <img
+                            class="post-img"
+                            src="../img/girl-w-stripes.jpg"
+                            alt="image"
+                        />
+                    </div>
+
+                    <div class="post-pfp">
+                        <img
+                            class="post-img"
+                            src="../img/profile-pic.jpg"
+                            alt="image"
+                        />
+                    </div>
+                    <div class="post-pfp">
+                        <img
+                            class="post-img"
+                            src="../img/girl-w-stripes.jpg"
+                            alt="image"
+                        />
+                    </div>
+                    <div class="post-pfp">
+                        <img
+                            class="post-img"
+                            src="../img/hearthands.jpg"
+                            alt="image"
+                        />
+                    </div>
+                </section>
+                <div class="floating-nav" style="padding: 20px">
+                    <a href="#newPostForm"
+                        ><div class="floating-new-post">
+                            <p class="pluss">+</p>
+                        </div></a
+                    >
+                    <a href="#"
+                        ><div class="floating-user">
+                            <img
+                                class="user-icon"
+                                src="../img/svg/user.svg"
+                                alt="user-icon"
+                            /></div
+                    ></a>
+                </div>
+            </div>
+        </main>
+        <form action="" id="newPostForm" class="new-post">
+            <h2 class="new-post-title">New post:</h2>
+            <hr />
+            <label for="upload-photo">Add image</label>
+            <input type="file" name="photo" id="upload-photo" />
+
+            <textarea
+                placeholder="What's on your mind?"
+                name="newPost"
+                id="newPost"
+                cols="30"
+                rows="10"
+            ></textarea>
+            <div class="submit-new-post">
+                <a href="#posted">submit</a>
+            </div>
+        </form>
+
+        <script type="module" src="../main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,130 @@
+@import url(./scss_imports/dropdown-styling.scss);
+
+.post {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: calc($padding-inner-value * 2);
+    .post-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: calc($padding-inner-value * 0.5) 0;
+        width: 100%;
+        border-top: white solid thin;
+        border-bottom: white solid thin;
+        .profile-pic-post {
+            overflow: hidden;
+            width: 80px;
+            min-height: 80px;
+            background-size: 120% 180%;
+            background-position: center;
+            border-radius: 50px;
+        }
+        .username {
+            flex: 1;
+            font-size: 18px;
+            font-weight: 400;
+            padding-left: $padding-inner-value;
+        }
+    }
+    .post-content {
+        padding: $padding-inner-value;
+        display: grid;
+        .post-img {
+            margin-bottom: 40px;
+            max-height: 600px;
+            max-width: 100%;
+            height: auto;
+            width: auto;
+            place-self: center;
+            box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.25);
+        }
+        .post-content-text {
+            place-self: center;
+            padding: $padding-inner-value 0;
+            max-width: 500px;
+            font-size: 16px;
+        }
+        .post-content-text::before {
+            content: "Birk Magnusson:";
+            font-weight: 700;
+        }
+    }
+}
+.load-more-posts {
+    margin: $padding-inner-value auto;
+    width: fit-content;
+    height: fit-content;
+    a {
+        background-color: none;
+        border: $clr-secondary 1.8px solid;
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+.floating-nav {
+    position: sticky;
+    bottom: 20px;
+    left: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.floating-new-post {
+    bottom: 20px;
+    right: 10px;
+    padding: 0 16.125px;
+    border-radius: 10px;
+    background-color: #222;
+    border: #22222222;
+    filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.3));
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    .pluss {
+        font-size: 50px;
+        display: flex;
+        align-items: center;
+    }
+    .pluss:hover::after {
+        content: "| New Post";
+        margin-left: 10px;
+        font-size: 30px;
+    }
+}
+.floating-user {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    bottom: 20px;
+    left: 10px;
+    min-width: 61px;
+    height: 61px;
+    border-radius: 10px;
+    background-color: #222;
+    border: #22222222;
+    filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.3));
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    .user-icon {
+        max-width: 40px;
+        max-height: 36px;
+    }
+}
+@media screen and (min-width: 480px) {
+    .post {
+        .post-header {
+            .username {
+                font-size: 24px;
+            }
+            .post-header-dropdown {
+                font-size: 24px;
+            }
+        }
+    }
+}

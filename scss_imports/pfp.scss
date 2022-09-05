@@ -1,0 +1,45 @@
+.posts-pfp {
+    padding: $padding-inner-value;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    justify-content: space-around;
+    gap: $padding-inner-value;
+}
+.post-pfp {
+    overflow: hidden;
+    display: grid;
+
+    img {
+        max-width: 100%;
+    }
+}
+.pfp-header {
+    padding: calc($padding-inner-value * 1.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(180deg, #52283a 0%, #884f68 100%);
+    .pfpic {
+        width: 125px;
+        height: 125px;
+    }
+    .profile-title {
+        color: $clr-primary-accent;
+        &::before {
+            content: "---";
+            color: inherit;
+        }
+        &::after {
+            content: "---";
+            color: inherit;
+        }
+    }
+    .description-title {
+        padding: $padding-inner-value 0;
+    }
+    .description {
+        max-width: 500px;
+    }
+}
